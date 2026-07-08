@@ -12,7 +12,7 @@ jobs:
         env:
           SITE_REPO_DISPATCH_TOKEN: ${{ secrets.SITE_REPO_DISPATCH_TOKEN }}
         run: |
-          curl -L \
+          curl --fail-with-body -L \
             -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${SITE_REPO_DISPATCH_TOKEN}" \
