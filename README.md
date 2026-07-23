@@ -79,7 +79,7 @@ V1 只支持 `published` 和 `draft`。
 ```yaml
 title: 标题
 status: published
-summary: 简介，可选但推荐
+summary: 简介，可选
 date: 2026-07-04
 cover: ./relative/path/to/cover.jpg
 ```
@@ -88,7 +88,7 @@ cover: ./relative/path/to/cover.jpg
 
 - `title`：必填，页面标题。
 - `status`：必填，`published` 或 `draft`。
-- `summary`：可选但推荐，用于列表页、RSS 等摘要展示。
+- `summary`：可选，用于列表页、RSS 等摘要展示。
 - `date`：推荐填写，用于列表排序和 RSS 时间。
 - `cover`：可选，封面图路径，使用相对当前 Markdown 文件的路径。
 
