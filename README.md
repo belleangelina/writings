@@ -1,6 +1,6 @@
 # writings
 
-公开写作内容仓库，用于存放会发布到个人 GitHub Pages 网站的文章、小说、记录和相关资源。
+公开写作内容仓库，用于存放会发布到个人 GitHub Pages 网站的长篇、短篇、笔记和相关资源。
 
 站点仓库：`belleangelina/belleangelina.github.io`  
 发布地址：`https://belleangelina.github.io/`
@@ -13,7 +13,7 @@ V1 支持三类内容：
 
 - `novels/`：长篇小说，按“作品 → 卷 → 章”组织。
 - `shorts/`：短篇小说或独立短文。
-- `notes/`：记录，例如开发调试经验、部署记录、写作记录等。
+- `notes/`：笔记，例如开发调试经验、部署记录、写作记录等。
 
 V1 只支持 Markdown `.md`，暂不支持 MDX，也暂不使用 tags。
 
@@ -37,8 +37,8 @@ writings/
 │     ├─ cover.jpg
 │     └─ images/
 └─ notes/
-   ├─ <note-slug>.md              # 记录正文
-   └─ <note-slug>/                # 可选：记录资源目录
+   ├─ <note-slug>.md              # 笔记正文
+   └─ <note-slug>/                # 可选：笔记资源目录
       └─ images/
 ```
 
@@ -167,9 +167,9 @@ shorts/<short-slug>/
 └─ images/
 ```
 
-## 记录
+## 笔记
 
-记录使用单个 `.md` 文件。
+笔记使用单个 `.md` 文件。
 
 ```text
 notes/<note-slug>.md
@@ -214,7 +214,7 @@ cover: ./summer-rain/cover.jpg
 
 网站构建时采用以下默认排序：
 
-- 文章总览、短篇、记录：按 `date` 倒序，新内容在前。
+- 文章总览、短篇、笔记：按 `date` 倒序，新内容在前。
 - 长篇列表：按作品 `date` 倒序。
 - 长篇内部：卷按 `volume` 升序，章按 `chapter` 升序。
 
